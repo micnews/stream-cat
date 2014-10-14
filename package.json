@@ -3,5 +3,8 @@
   "description": "Concatenate streams, the simple way",
   "version": "0.0.0",
   "repository": "micnews/stream-cat",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "stream-read": "^1.0.1"
+  }
 }
