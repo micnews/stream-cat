@@ -28,6 +28,16 @@ test('read only', function(t){
   t.end();
 });
 
+test('forward errors', function(t){
+  t.plan(1);
+  var src = emits('oops');
+  var c = cat([src]);
+  c.on('error', function(err){
+    t.ok(err);
+  });
+  src.emit('error', new Error);
+});
+
 function emits(str){
   var chars = str.split('');
   var idx = 0;

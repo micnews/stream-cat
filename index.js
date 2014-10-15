@@ -8,6 +8,9 @@ module.exports = function cat(streams){
     var stream = streams[i];
     if (!stream) return out.push(null);
     stream.pipe(out, { end: false });
+    stream.on('error', function(err){
+      out.emit('error', err);
+    });
     stream.on('end', function(){
       next(i + 1);
     });

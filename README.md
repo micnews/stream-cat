@@ -24,7 +24,7 @@ $ npm install stream-cat
 
 ### cat(streams)
 
-  Given an array of `streams`, drain one after another completely and stream the results. Returns a readable stream.
+  Given an array of `streams`, drain one after another completely and stream the results. Returns a readable stream. Errors are forwarded.
 
   Just like `cat streamA streamB`.
 
