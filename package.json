@@ -1,7 +1,7 @@
 {
   "name": "stream-cat",
   "description": "Concatenate streams, the simple way",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "repository": "micnews/stream-cat",
   "license": "MIT",
   "dependencies": {
