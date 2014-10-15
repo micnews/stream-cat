@@ -1,7 +1,13 @@
 var PassThrough = require('stream').PassThrough;
 var readonly = require('read-only-stream');
+var Readable = require('stream').Readable;
 
 module.exports = function cat(streams){
+  // force pull mode
+  streams = streams.map(function(stream){
+    return Readable().wrap(stream);
+  });
+
   var out = PassThrough();
 
   (function next(i){

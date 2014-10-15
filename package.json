@@ -9,7 +9,8 @@
   },
   "devDependencies": {
     "concat-stream": "^1.4.6",
-    "tape": "^3.0.0"
+    "tape": "^3.0.0",
+    "through": "^2.3.6"
   },
   "testling": {
     "files": "test/*.js",
