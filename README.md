@@ -3,6 +3,8 @@
 
   Concatenate streams, the simple way.
 
+  [![build status](https://secure.travis-ci.org/micnews/stream-cat.svg)](http://travis-ci.org/micnews/stream-cat)
+
 ## Example
 
 ```js
